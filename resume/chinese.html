@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文履歷</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: auto;
+            position: relative;
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+		.back {
+			position: fixed; 
+			left: 0; 
+			transform: translateY(-50%); 
+			list-style-type: none;
+			display: flex;
+			flex-direction: column; 
+			align-items: center; 
+			font-size: 1.2em;
+			margin-left: 10px; 
+		}
+
+		.back a {
+			color: #FFF9C4;
+			text-shadow:5px 5px 5px #F57F17;
+			text-decoration: none;
+			margin-bottom: 10px; 
+			display: flex;
+			align-items: center; 
+		}
+
+		.back img {
+			margin-right: 5px; 
+			height: 1em;
+		}
+		.forward {
+			position: fixed; 
+			right: 0; 
+			transform: translateY(-50%); 
+			list-style-type: none;
+			display: flex;
+			flex-direction: column; 
+			align-items: center; 
+			font-size: 1.2em;
+			margin-left: 10px; 
+		}
+
+		.forward a {
+			color: #E1F5FE;
+			text-shadow:5px 5px 5px #0277BD;
+			text-decoration: none;
+			margin-bottom: 10px; 
+			display: flex;
+			align-items: center; 
+		}
+
+		.forward img {
+			margin-right: 5px; 
+			height: 1em;
+		}
+
+        .select-section {
+            text-align: center;
+            color: #263238;
+			z-index: 1;
+        }
+
+        table th:first-child,
+        table td:first-child {
+            width: 20%;
+            text-align: center;
+			z-index: 1;
+        }
+
+        table.experience,
+        table.skills,
+        table.introduction {
+            background-color: rgba(255, 255, 255, 0.7);
+            margin: 0 auto;
+            width: 80%;
+			z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="morning.mp4" type="video/mp4">
+    </video>
+	<div class="back">
+		<a href="resume.html">
+			<img src="back4.png">回到選單
+		</a>
+	</div>
+	<div class="forward">
+		<a href="english.html">
+			<img src="forward1.png"><br>forward to<br>english version
+		</a>
+	</div>
+	
+    <div class="select-section">
+        <h1>中文履歷</h1>
+        <select id="sectionSelect">
+            <option value="" selected disabled>選擇一個選項</option>
+            <option value="experience">工作經歷</option>
+            <option value="skills">專長描述</option>
+            <option value="introduction">自我介紹</option>
+        </select>
+    </div>
+	<br>
+    <table id="experience" class="experience" border="1">
+		<thead>
+			<tr><th colspan="2">工作經歷</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>技流科技任職四年</td>
+			<td>Function部門測試工程師 (2019/4 ~ 2021/9)
+				<ul>
+				<li>熟悉Intel官方發布關於Thunderbolt Host/Device的各項相容性測試規範，<br>
+				測試遍及Notebook/Desktop/AIO/Dock/Storage/eGFX等等產品</li>
+				<li>測試介面包含Mac/Windows/Chrome等系統</li>
+				<li>善於與客戶溝通，協助其了解測試的內容、結果及給予相關建議<br></li>
+				</ul>
+				Function部門小組長 (2021/9 ~ 2022/12)
+				<ul>
+				<li>策劃並追蹤同組10+正職成員們的個人發展 </li>
+				<li>管理同組20+正職與兼職同仁們的工作安排，涵蓋Function部門整體80%的測試需求</li>
+				<li>定期於官網發布技術文章</li>
+				<li>針對新專案與客戶持續溝通設計出相關流程及系統，完成100+螢幕、100+桌機<br>
+				、500+筆電及100+其他配件的空間規劃，後期的技術學習及相關的SOP製作<br></li>
+				</ul>
+				福委會成員(2021/1 ~ 2022/1)
+				<ul>
+				<li>舉辦春酒、員工旅遊、餐會、尾牙等等超過10+場的活動規劃</li>
+				<li>構思各式遊戲內容，增進公司團隊合作的默契及同事間情感的聯繫</li>
+				</ul>			
+			</td></tr>
+		</tbody>
+    </table>
+
+    <table id="skills" class="skills" border="1">
+		<thead>
+			<tr><th colspan="2">專長描述</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>作業系統</td>
+			<td>&nbsp;Windows / Mac / Chrome</td></tr>
+			<tr><td>測試軟體</td>
+			<td>&nbsp;TCM / TDT / USB4 Monitor / IOmeter / USBView / RW Everything</td></tr>
+			<tr><td>文書處理</td>
+			<td>&nbsp;Microsoft office - Word / PowerPoint / Excel</td></tr>
+			<tr><td>程式語言</td>
+			<td>&nbsp;Python / HTML / CSS</td></tr>
+		</tbody>
+    </table>
+
+    <table id="introduction" class="introduction" border="1">
+		<thead>
+			<tr><th colspan="2">自我介紹</th></tr>
+		</thead>
+		<tbody>
+		<tr><td colspan="2">個性認真負責，學習力強，善於傾聽，<br>
+		畢業後進入GRL擔任測試工程師一職，因為工作上的需求我能接觸到各式各樣不同的商品與技術，<br>
+		這開拓了我的視野，各式新奇的體驗更加深了我對科技業的嚮往，<br>
+		在公司開明的制度下，我接觸到很多不同介面的知識，像是DP / HDMI / USB / TBT / PD等等，<br>
+		之後也有幸獲得能在公司官網刊登技術文章的機會，<br>
+		在工作上我需要與客戶聯繫相關的測試訊息，	因此溝通的技巧、說話的藝術也成了我在這間公司努力學習的議題。<br>
+		因為活潑有趣的個性，期間也曾擔任過公司福委的角色，參與策劃公司的各式活動，進而促進公司成員們的情誼。<br>
+		在團隊中，因為認真負責的態度，我陸續開始負責小組長的角色，<br>
+		怎樣去提升公司的效率，如何幫助成員們發展都是我努力達成的目標，<br>
+		我學習去傾聽成員們的需求、老闆的期望以及制定目標的重要性。<br>
+		之後也被委派去負責公司新接洽的專案，前期與廠商的接洽，倉庫的空間配置，流程預想等等都讓我獲益良多，<br>
+		對於日後，我將不斷精進自己並提升專業的知識，<br>
+		希望能在工作中得到更多的歷練，認真的做好自己，貢獻自己最大的心力，<br>
+		並祈願之後能有幸成為貴司的一員，為貴司效力將是我莫大的榮幸，<br>
+		再次謝謝您撥空閱讀我的履歷。</td></tr>
+		</tbody>
+    </table>
+
+    <script>
+        // 取得 select 元素
+        var selectElement = document.getElementById('sectionSelect');
+
+        // 監聽選擇事件
+        selectElement.addEventListener('change', function () {
+            // 取得被選擇的選項值
+            var selectedValue = selectElement.value;
+
+            // 如果有選擇值且對應的元素存在，則導航到相應的區域
+            if (selectedValue && document.getElementById(selectedValue)) {
+                window.location.href = '#' + selectedValue;
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pei Jung Yueh's autobiography</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: relative; /* 設定相對位置 */
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1; /* 設定堆疊順序，讓影片在最底層 */
+        }
+
+        .content_1 {  
+			text-align: center;
+			color: #0D47A1;
+			font-size: 1em;
+			z-index: 1; /* 設定堆疊順序，讓文字在影片上方 */
+			font-family: "Kalnia"; /* 將字體設定移到這裡 */
+		}
+        .content_2 {  /*還要再修改，字體，顏色*/
+			text-align: center;
+			color: white;
+			font-size: 1.8em;
+			z-index: 1; /* 設定堆疊順序，讓文字在影片上方 */
+			font-family: "Kalnia"; /* 將字體設定移到這裡 */
+		}
+        .content_3 {  /*還要再修改，字體，顏色*/
+			text-align: center;
+			color: #F8BBD0;
+			font-size: 0.7em;
+			z-index: 1; /* 設定堆疊順序，讓文字在影片上方 */
+			font-family: "Kalnia"; /* 將字體設定移到這裡 */
+		}
+        ul.star {
+            list-style-type: none; /* 移除預設的項目符號 */
+            display: flex; /* 使用 flex 佈局 */
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            padding: 0; /* 移除預設的內邊距 */
+        }
+        li.starcolor {
+            background-image: url(star2.png);
+            background-repeat: no-repeat;
+            background-size: 1em 1em; /* 調整圖片大小為 1em x 1em */
+            padding-left: 1.5em; /* 為文字留出空間，也可以調整此值 */
+            a:link{color:white;}
+			a:visited{color:#FFF9C4;}
+			font-size: 1.3em;
+            line-height: 1em; /* 讓文字和圖片垂直置中 */
+            margin-right: 20px; /* 調整項目之間的間距 */
+			font-family: "Silkscreen";
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="sea.mp4" type="video/mp4">
+    </video>
+    <div class="content_1">
+        <h1>岳貝融</h1> 
+		<img src="self.jpg" height="200">
+	</div>
+    <div class="content_2">
+        <p>Pei Jung Yueh's autobiography</p>
+    </div>
+	<div class="content_3">
+		<h2>"You just have to dare to do it.<br>
+		If you dare, then you have already got further ahead than 99% of all others" - Daniel EK<br><br></h2>
+	</div>
+    <ul class="star">
+        <li class="starcolor"><a href="chinese.html">中文版本</a></li>
+        <li class="starcolor"><a href="english.html">english version</a></li>
+    </ul>
+</body>
+</html>
